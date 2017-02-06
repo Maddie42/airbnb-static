@@ -8,3 +8,86 @@ title: Le Wagon Middleman boilerplate
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
   </p>
 </div>
+
+
+
+    <!-- Your banner code -->
+    <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+      <div class="banner-content">
+        <h1>WELCOME HOME</h1>
+        <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+        <form action="#" class="form-inline">
+          <input type="text" class="form-control input-lg" placeholder="checkin">
+          <input type="text" class="form-control input-lg" placeholder="checkout">
+          <select name="" id="" class="form-control input-lg">
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+          </select>
+          <input type="submit" class="btn btn-primary btn-lg" value="Search">
+        </form>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+  <div class="container text-center padded features">
+    <div class="row">
+
+    </div>
+  </div>
+
+
+  <div class="container text-center padded features">
+    <div class="row">
+      <% data.products.each do |product, infos| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag(infos.picture) %>
+        <h2><%= infos.title %></h2>
+        <p><%= infos.details %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+
+
+    <!-- Your cards code -->
+  <div class="wrapper-grey padded">
+    <div class="container">
+      <h2 class="text-center">Your next trip</h2>
+      <div class="row">
+        <% data.team.each do |member, infos| %>
+        <div class="col-xs-12 col-md-4">
+          <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path(infos.url) %>);">
+            <div class="card-category"><%= infos.location %></div>
+            <%= image_tag infos.picture, class: "card-user avatar avatar-large" %>
+            <div class="card-description">
+            <h2><%= member.capitalize %></h2>
+            <p><%= infos.details %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Your newsletter code -->
+    <div class="text-center padded" id="newsletter">
+      <h2>Get news from us</h2>
+      <p>Leave us your mail and get news from us</p>
+      <form class="form-inline">
+        <input type="email" placeholder="spock@cat.com" class="form-control">
+        <input type="submit" value="Subscribe" class="btn btn-primary">
+      </form>
+    </div>
+    <!-- Your map code -->
+
+    <!-- Your footer code -->
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+

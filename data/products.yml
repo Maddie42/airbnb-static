@@ -1,4 +1,22 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+globe:
+  picture: globe.png
+  title: Discover the world
+  details: The earth is your new home.
+
+
+dollar:
+  picture: dollar.png
+  title: Pay online
+  details: No cash issues anymore.
+
+
+beer:
+  picture: beer.png
+  title: Meet people
+  details: Discover new culture and lifestyle.
+
+
+heart:
+  picture: heart.png
+  title: Share and love
+  details: Join a community you will love.

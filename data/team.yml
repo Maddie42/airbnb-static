@@ -1,0 +1,19 @@
+romain:
+  picture: romain.jpg
+  location: London
+  details: Cool place to chill
+  url: cardlondon.jpeg
+
+seb:
+  picture: seb.jpg
+  location: Paris
+  details: Great place and all
+  url: cardparis.jpg
+
+anne:
+  picture: anne.jpg
+  location: Brussels
+  details: Some ramdom place
+  url: cardbrussels.jpeg
+
+
